@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class First{
@@ -24,9 +25,16 @@ public class First{
         arr[0] = 23;
         System.out.println(arr[0]);
 
-        //dynamic size array, like vector in java
+        //dynamic size array, like vector in c++
         List<Integer> arr2 = new ArrayList<>();
         arr2.add(234);
         System.out.println(arr2);
+
+        int []arr3 = {45,67,23,62};
+
+        System.out.println(arr3[2]);
+        System.out.println("array length : " + arr3.length);
+        Arrays.sort(arr3);
+        System.out.println("Sorted array : "+Arrays.toString(arr3));
     }
 }
